@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-image: url("backimg.png");
     background-image: no-repeat;
@@ -62,8 +61,14 @@ h2 {
     font-weight: 0.2rem;
     position: relative;
     right: 4%;
-    /* width:7rem; */
-    width: auto;
+    width:7rem;
+    border-radius: 0.3rem;
+    height: 1.2rem;
+    box-sizing: border-box;
+    border-width: thin;
+    border: 0.5px solid gray;
+   
+    /* width: auto; */
 }
 
 .form {
@@ -152,11 +157,12 @@ h2 {
 
 @media screen and (max-width:800px) {
 
-    /* .body{
-        /* background-image:url("backimg.png"); 
-        background-color:transparent;
-
-    } */
+    .body{
+         /* background-image:url("backimg.png"); 
+        background-color:transparent; */
+        
+background-repeat:no-repeat;
+    }
     .apply_box {
         max-width: 75vw;
         height: 75vh;
