@@ -1,142 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header >
-        <nav class="nav1">
-            <div>
+    <header>
+        <nav class="nav1 navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <!-- <img src="interncrowd.png" alt="mylogo"> -->
-                <a href="#">HOME</a>
-                <a href="#">INTERNSHIPS</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link" href="#">INTERNSHIPS</a>
+                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <section class="hero_section">
-        <div class="text_container">
-            <h2>Enter the world of coding by enrolling in our internship program today!!</h2>
+        <div class="row">
+            <!-- <div class="row text-center" style="--bs-columns: 4; --bs-gap: 5rem;"> -->
+
+            <div class=" text_container col-md-6">
+            <h4>Enter the world of coding by enrolling in our internship program today!!</h4>
             <p>"In every student, there is a power to change the world."</p>
 
-            <button class="my_button">Get Started</button>
+            <button class=" btn btn-primary btn-md my_button ">Get Started</button>
         </div>
-        <div class="mainimg">
-            <img src="proimage.png" alt="man mainimage">
+        <div class="mainimg col-md-6">
+            <img src="proimage.png "class="photo" alt="man mainimage">
         </div>
+    </div>
     </section>
     <div class="objects">
-        <h1>our services</h1>
+        <h3>our services</h3>
     </div>
     <!-- <div class=""> -->
     <section class="services">
-        <div class="services1">
-            <div class="grid_item">
-                <div class="card">
-                    <div class="image_container">
+        <div class="row services1">
+            <div class="col-lg-4 col-md-6 col-sm-12 grid_item">
+                <div class="card demo">
+                    <div class=" card-img-top image_container">
+                        <img src="cdwd.png"class="img-fluid img-thumbnail"  alt=" WEB Development " />
+                    </div>
+                    <div class="card-body card_content ">
+                        <h5 class="card-title">WEB DEVELOPMENT</h5>
+                        <p class="card-text">Website needs to work across all devices and it needs to be fast as possible</p>
+                    </div>
+                    <!-- <button class=" btn btn-success btn-md my_button ">APPLY NOW</button> -->
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>    
+            </div>
+            <div class="col-lg-4 col-md-6 grid_item">
+                <div class="card demo">
+                    <div class="card-img-top image_container">
+                        <img src="cdjd.png"class="img-fluid img-thumbnail"  alt="JAVA DEVELOPMENT " />
+                    </div>
 
-                        <img src="cdwd.png" alt=" WEB Development " />
+                    <div class="card-body card_content">
+                        <h5  class="card-title">JAVA DEVELOPMENT</h5>
+                        <p  class="card-text">It includes owning a particular application or working on several at one time.</p>
                     </div>
-                    <div class="card_content ">
-                        <h3>WEB DEVELOPMENT</h3>
-                        <p>Website needs to work across all devices and it needs to be fast as possible</p>
-                    </div>
+                    <!-- <button class=" btn btn-success btn-md my_button ">APPLY NOW</button> -->
+                    <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
             </div>
-            <div class="grid_item">
-                <div class="card">
-                    <div class="image_container">
-                        <img src="cdjd.png" alt="JAVA DEVELOPMENT " />
+            <div class="col-lg-4 col-md-6 grid_item">
+                <div class="card demo">
+                    <div class="card-img-top image_container">
+                        <image src="cdaad.png"class="img-fluid img-thumbnail"  alt="APP DEVELOPMENT " />
                     </div>
-                
-                    <div class="card_content">
-                        <h3>JAVA DEVELOPMENT</h3>
-                        <p>It includes owning a particular application or working on several at one time.</p>
+                    <div class="card-body card_content">
+                        <h5 class="card-title"> Android APP Development</h5>
+                        <p class="card-text">It is created for making devices running the operating systems of Android.</p>
                     </div>
+                    <!-- <button class=" btn btn-success btn-md my_button ">APPLY NOW</button> -->
+                    <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
             </div>
-            <div class="grid_item">
-                <div class="card">
-                    <div class="image_container">
-                        <image src="cdaad.png" alt="APP DEVELOPMENT " />
+        
+            <div class="col-lg-4 col-md-6 grid_item">
+                <div class="card demo">
+                    <div class="card-img-top image_container">
+                        <image src="cddm.png" class="img-fluid img-thumbnail" alt="DIGITAL MARKETTING " />
                     </div>
-                    <div class="card_content">
-                        <h3> Android APP Development</h3>
-                        <p>It is created for making devices running the operating systems of Android.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="services2">
-            <div class="grid_item">
-                <div class="card">
-                    <div class="image_container">
-                        <image src="cddm.png" alt="DIGITAL MARKETTING " />
-                    </div>
-                    <div class="card_content">
-                        <h3>DIGITAL MARKETTING</h3>
-                        <p>It is the marketing and advertising of a business, product, or service using social media.
+                    <div class="card-body card_content">
+                        <h5 class="card-title">DIGITAL MARKETTING</h5>
+                        <p class="card-text">It is the marketing and advertising of a business, product, or service using social media.
                         </p>
                     </div>
+                    <!-- <button class=" btn btn-success btn-md my_button ">APPLY NOW</button> -->
+                    <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
             </div>
-            <div class="grid_item">
-                <div class="card">
-                    <div class="image_container">
-                        <img src="cdc++.png" alt="C++ DEVELOPMENT " />
+            <div class="col-lg-4 col-md-6 grid_item">
+                <div class="card demo">
+                    <div class="card-img-top image_container">
+                        <img src="cdc++.png"class="img-fluid img-thumbnail"  alt="C++ DEVELOPMENT " />
                     </div>
-                    <div class="card_content">
-                        <h3>C++ DEVELOPMENT</h3>
-                        <p>It is a general-purpose programming and coding language.</p>
+                    <div class="card-body card_content">
+                        <h5 class="card-title">C++ DEVELOPMENT</h5>
+                        <p class="card-text">It is a general-purpose programming and coding language.</p>
                     </div>
+                    <!-- <button class=" btn btn-success btn-md my_button ">APPLY NOW</button> -->
+                    <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
             </div>
-            <div class="grid_item">
-                <div class="card">
-                    <div class="image_container">
-                        <img src="cdcm.png" alt="CLOUD COMPUTING " />
+          
+            <div class="col-lg-4 col-md-6 grid_item">
+                <div class="card demo">
+                    <div class="card-img-top image_container">
+                        <img src="cdcm.png"class="img-fluid img-thumbnail"  alt="CLOUD COMPUTING " />
                     </div>
-                    <div class="card_content">
-                        <h3>CLOUD COMPUTING</h3>
-                        <p>It is the delivery of distinct services over the Internet.</p>
+                    <div class="card-body card_content">
+                        <h5 class="card-title">CLOUD COMPUTING</h5>
+                        <p class="card-text">It is the delivery of distinct services over the Internet.</p>
                     </div>
+                    <!-- <button class=" btn btn-success btn-md my_button ">APPLY NOW</button> -->
+                    <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
+                
             </div>
+            
         </div>
     </section>
     <!-- </div> -->
-    <section class="bottom_section">
+    <section class=" bottom_section">
         <div class="about">
-            <h2>INTERN CROWD</h2>
+            <h4>INTERN CROWD</h4>
             <p>Intern Crowd Is An Online Coding Platform that Offers Specially Programming Courses For
                 Students. You've Probably Heard About How Programming Shines With New Technology. We
                 Have To Be Aware Of How Programming Can Initiate New Innovations. What's A Better
                 Approach For Our Students Is To Grasp And Adapt To The Technology Around Them. </p>
         </div>
         <div class="contact">
-            <h2>QUICK LINKS</h2>
-            <div ><a href="#">HOME</a></div>
-            <div ><a href="#">INTERNSHIPS</a></div>
-            <div ><a href="#">ABOUT</a></div>
-            <div ><a href="#">CONTACT</a></div>
+            <h4>QUICK LINKS</h4>
+            <div><a href="#">HOME</a></div>
+            <div><a href="#">INTERNSHIPS</a></div>
+            <div><a href="#">ABOUT</a></div>
+            <div><a href="#">CONTACT</a></div>
         </div>
         <div class="links">
-            <h2>USEFUL LINKS</h2>
-            
-            <div ><a href="#1">help center</a></div>
-            <div ><a href="#2">ask questions</a></div>
+            <h4>USEFUL LINKS</h4>
+            <div><a href="#1">help center</a></div>
+            <div><a href="#2">ask questions</a></div>
             <div><a href="#3">send feedback</a></div>
-        
         </div>
-
     </section>
 </body>
 
